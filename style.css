@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet');
+
+body {
+    background-color: #0f0;
+    /* Green background */
+    color: #000;
+    /* Black text */
+    font-family: 'Fira Code', monospace;
+    /* Fira Code font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#terminal {
+    background-color: #000;
+    /* Black terminal background */
+    color: #0f0;
+    /* Green text */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.dots {
+    display: inline-block;
+    width: 1ch;
+    text-align: left;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #0f0;
+    animation: blink 1s step-end infinite;
+    position: absolute;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #0f0;
+    }
+}
